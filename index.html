@@ -1,0 +1,53 @@
+<!-- 
+Author: Mohammad Faisal
+Project: Book management portal
+Language: HTML,CSS,JAVASCRIPT, bootstrap
+Date: 12/09/2019
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+
+    <title>BookList Mania</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"> <i class="fas fa-book-open text-success"></i>
+            Faisal<span class="text-success">Book</span>Diary</h1>
+            <form id="book-form">
+                <div class="form-group"> 
+                    <label for="title">Book Name</label>
+                    <input type="text" id="title" class="form-control">
+                </div>
+                <div class="form-group"> 
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="form-control">
+                </div>
+                <div class="form-group"> 
+                    <label for="isbn">Book Reference Number</label>
+                    <input type="text" id="isbn" class="form-control">
+                </div>
+                <input type="submit" value="Add book" class="btn btn-success btn-block">  
+            </form>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Book Reference Number</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</html>
